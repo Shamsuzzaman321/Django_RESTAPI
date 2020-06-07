@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Homepage</h2>
+  <p>Welcome to My Site, {% if user.is_authenticated %}{{ user.username }}{% else %}visitor{% endif %}!</p>
+  <h1>Hello Bhaiya this is my authentication testing </h1>
+  <p style="color: blue; font-size: 35px;">-->আমি individually django র feature গুলা প্রজেক্ট আকারে upload করবো এতে বুঝতে সুবিধা হবে আমার </p>
+  <img src="https://cw-production-assetsbucket-8j84s7jns7p2.s3.amazonaws.com/media/blog-images/django-logo.gif">
+
+  <p>
+    <strong>Total users registered: </strong> {{ count }}
+  </p>
+{% endblock %}
